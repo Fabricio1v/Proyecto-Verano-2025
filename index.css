@@ -1,0 +1,96 @@
+body {
+    font-family: 'Arial', sans-serif;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 100vh;
+    background-color: #f0f0f0;
+    margin: 0;
+}
+
+.calculator {
+    background-color: #fff;
+    padding: 20px;
+    border-radius: 10px;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+    max-width: 400px;
+    width: 100%;
+    text-align: center;
+    position: relative;
+}
+
+.calculator h2 {
+    margin-bottom: 20px;
+    color: #333;
+}
+
+.steps {
+    display: flex;
+    justify-content: space-between;
+    margin-bottom: 20px;
+}
+
+.step {
+    flex: 1;
+    padding: 10px;
+    border-radius: 5px;
+    background-color: #e0e0e0;
+    margin: 0 5px;
+    color: #333;
+}
+
+.step.active {
+    background-color: #007bff;
+    color: #fff;
+}
+
+.calculator input {
+    margin: 10px 0;
+    padding: 10px;
+    width: calc(100% - 22px);
+    border: 1px solid #ccc;
+    border-radius: 5px;
+    font-size: 16px;
+}
+
+.calculator button {
+    margin: 10px 0;
+    padding: 10px;
+    width: 100%;
+    background-color: #007bff;
+    color: #fff;
+    border: none;
+    border-radius: 5px;
+    font-size: 16px;
+    cursor: pointer;
+    transition: background-color 0.3s;
+}
+
+.calculator button:hover {
+    background-color: #0056b3;
+}
+
+.calculator p {
+    margin: 10px 0;
+    font-size: 1.2em;
+    color: #333;
+}
+
+#divisionSection {
+    display: none;
+}
+
+.progress-bar {
+    width: 100%;
+    background-color: #e0e0e0;
+    border-radius: 5px;
+    overflow: hidden;
+    margin-top: 20px;
+}
+
+.progress {
+    height: 10px;
+    width: 0;
+    background-color: #007bff;
+    transition: width 0.3s;
+}
